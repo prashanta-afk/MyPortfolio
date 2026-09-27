@@ -1,18 +1,294 @@
-<html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>About Me</h1>
-        <p>I am a web developer passionate about creating interactive and user-friendly websites.</p>
-    </body> 
+<!DOCTYPE html>
+<html lang="en">
 
-    <h1>My Skills</h1>
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    </h1>
-    <h1>My Project</h1>
+<body>
 
-    <h1>Contact Me</h1>
+    <!-- Header / Logo Division -->
+    <div class="header-container">
 
-    
+        <div class="logo-container">
+            <header>
+                <img src="Image/Logo.png"
+                     alt="Logo"
+                     width="200"
+                     height="200">
+            </header>
+        </div>
+
+    </div>
+
+        <div class="search-container">
+
+        <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+
+    </div>
+
+    <!-- Navigation Division -->
+    <div class="nav-container">
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- Search Bar Division -->
+
+
+
+    <!-- About Me Division -->
+    <div class="about-container">
+
+        <section id="about">
+
+            <h1>About Me</h1>
+
+            <p>
+                I am a web developer passionate about creating interactive
+                and user-friendly websites.
+            </p>
+
+            <img src="Image/Profile%20Picture.png"
+                 alt="Profile Picture"
+                 width="200"
+                 height="200">
+
+        </section>
+
+    </div>
+
+
+    <!-- Education Division -->
+    <div class="education-container">
+
+        <section id="education">
+
+            <h1>Education</h1>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>S.N</th>
+                        <th>Level</th>
+                        <th>Institute</th>
+                        <th>GPA</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Bachelor</td>
+                        <td>Kathmandu University</td>
+                        <td>3.5</td>
+                        <td>A</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Higher Secondary</td>
+                        <td>St. Xavier's College</td>
+                        <td>3.8</td>
+                        <td>A+</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Secondary</td>
+                        <td>St. Xavier's School</td>
+                        <td>3.9</td>
+                        <td>A+</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+
+    <!-- Skills Division -->
+    <div class="skills-container">
+
+        <section id="skills">
+
+            <h1>My Skills</h1>
+
+            <ul>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+            </ul>
+
+            <dl>
+                <dt>Python</dt>
+                <dd>A programming language used to create programs and applications.</dd>
+
+                <dt>HTML</dt>
+                <dd>A markup language used to create the structure of web pages.</dd>
+
+                <dt>CSS</dt>
+                <dd>A language used to control the appearance of web pages.</dd>
+            </dl>
+
+        </section>
+
+    </div>
+
+
+    <!-- Projects Division -->
+    <div class="projects-container">
+
+        <section id="projects">
+
+            <h1>My Projects</h1>
+
+            <article>
+
+                <h2>School Management System</h2>
+
+                <p>
+                    Here you can find some of my projects.
+                </p>
+
+                <ul>
+                    <li>Personal Portfolio Website</li>
+                    <li>Student Management System</li>
+                    <li>Python Projects</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+    </div>
+
+
+    <!-- Contact Division -->
+    <div class="contact-container">
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <form>
+                <!-- Name -->
+                <label for="name">Name:</label>
+                <br>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Enter your name">
+                <br>
+                <br>
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <br>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email">
+                <br>
+                <br>
+                <!-- Subject -->
+                <label for="subject">Subject:</label>
+                <br>
+                <input type="text"
+                       id="subject"
+                       name="subject"
+                       placeholder="Enter subject">
+                <br>
+                <br>
+                <!-- Message -->
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          cols="30"
+                          placeholder="Write your message"></textarea>
+                <br>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+
+    <!-- Social Media Division -->
+    <div class="social-container">
+
+        <section id="social">
+
+            <h2>Find Me On</h2>
+
+
+            <!-- Gmail -->
+            <div class="gmail-container">
+
+                <a href="https://mail.google.com/" target="_blank">
+
+                    <img src="Image/gmail_logo.jpg"
+                         alt="Gmail"
+                         width="50"
+                         height="50">
+
+                </a>
+
+            </div>
+
+
+            <!-- Facebook -->
+            <div class="facebook-container">
+
+                <a href="https://www.facebook.com/" target="_blank">
+
+                    <img src="Image/Facebook_logo.webp"
+                         alt="Facebook"
+                         width="50"
+                         height="50">
+
+                </a>
+
+            </div>
+
+
+            <!-- GitHub -->
+            <div class="github-container">
+
+                <a href="https://github.com/" target="_blank">
+
+                    <img src="Image/git_logo.jpg"
+                         alt="GitHub"
+                         width="50"
+                         height="50">
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
 </html>

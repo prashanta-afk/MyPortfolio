@@ -1,0 +1,43 @@
+body{
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: "segoe ui", roboto ,sans-serif;
+}
+
+header{
+    background-color: #072add;
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
