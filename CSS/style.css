@@ -510,7 +510,7 @@ p {
 .contact-inner {
     display: flex;
     max-width: 1108px;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 50px;
     margin: 0 auto;
@@ -526,12 +526,60 @@ p {
 }
 
 .contact-links {
-    width: 32%;
+    width: 45%;
 }
 
 .contact-links p {
     color: #d0ddd6;
     font-size: 14px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #d0ddd6;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-row {
+    display: flex;
+    gap: 14px;
+}
+
+.form-field {
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #789186;
+    background: #f7f7f1;
+    color: #172e29;
+    font: inherit;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    margin: 16px 0 20px;
+    padding: 12px 18px;
+    border: 0;
+    background: #e7ef73;
+    color: #173b32;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+}
+
+.contact-form button:hover {
+    background: #f2f69c;
 }
 
 .contact-links a {
@@ -744,6 +792,11 @@ a:focus-visible {
 
     .contact-inner {
         padding-bottom: 42px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
     }
 
     .contact-bottom,
