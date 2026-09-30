@@ -1,294 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101922">
+    <meta name="description" content="The portfolio of Prashanta Pathak, a web developer interested in thoughtful, useful digital experiences.">
+    <title>Prashanta Pathak | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
-
-    <!-- Header / Logo Division -->
-    <div class="header-container">
-
-        <div class="logo-container">
-            <header>
-                <img src="Image/Logo.png"
-                     alt="Logo"
-                     width="200"
-                     height="200">
-            </header>
-        </div>
-
-    </div>
-
-        <div class="search-container">
-
-        <form>
-            <input type="text" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
-
-    </div>
-
-    <!-- Navigation Division -->
-    <div class="nav-container">
-
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Site identity and navigation -->
+    <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Prashanta Pathak, home">
+            <img src="Image/Logo.png" alt="" width="48" height="48">
+            <span>Prashanta Pathak</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
         </nav>
+    </header>
 
-    </div>
-
-
-    <!-- Search Bar Division -->
-
-
-
-    <!-- About Me Division -->
-    <div class="about-container">
-
-        <section id="about">
-
-            <h1>About Me</h1>
-
-            <p>
-                I am a web developer passionate about creating interactive
-                and user-friendly websites.
-            </p>
-
-            <img src="Image/Profile%20Picture.png"
-                 alt="Profile Picture"
-                 width="200"
-                 height="200">
-
-        </section>
-
-    </div>
-
-
-    <!-- Education Division -->
-    <div class="education-container">
-
-        <section id="education">
-
-            <h1>Education</h1>
-
-            <table border="1">
-
-                <thead>
-                    <tr>
-                        <th>S.N</th>
-                        <th>Level</th>
-                        <th>Institute</th>
-                        <th>GPA</th>
-                        <th>Grade</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>1</td>
-                        <td>Bachelor</td>
-                        <td>Kathmandu University</td>
-                        <td>3.5</td>
-                        <td>A</td>
-                    </tr>
-
-                    <tr>
-                        <td>2</td>
-                        <td>Higher Secondary</td>
-                        <td>St. Xavier's College</td>
-                        <td>3.8</td>
-                        <td>A+</td>
-                    </tr>
-
-                    <tr>
-                        <td>3</td>
-                        <td>Secondary</td>
-                        <td>St. Xavier's School</td>
-                        <td>3.9</td>
-                        <td>A+</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </section>
-
-    </div>
-
-
-    <!-- Skills Division -->
-    <div class="skills-container">
-
-        <section id="skills">
-
-            <h1>My Skills</h1>
-
-            <ul>
-                <li><a href="#">Python</a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-            </ul>
-
-            <dl>
-                <dt>Python</dt>
-                <dd>A programming language used to create programs and applications.</dd>
-
-                <dt>HTML</dt>
-                <dd>A markup language used to create the structure of web pages.</dd>
-
-                <dt>CSS</dt>
-                <dd>A language used to control the appearance of web pages.</dd>
-            </dl>
-
-        </section>
-
-    </div>
-
-
-    <!-- Projects Division -->
-    <div class="projects-container">
-
-        <section id="projects">
-
-            <h1>My Projects</h1>
-
-            <article>
-
-                <h2>School Management System</h2>
-
-                <p>
-                    Here you can find some of my projects.
-                </p>
-
-                <ul>
-                    <li>Personal Portfolio Website</li>
-                    <li>Student Management System</li>
-                    <li>Python Projects</li>
-                </ul>
-
-            </article>
-
-        </section>
-
-    </div>
-
-
-    <!-- Contact Division -->
-    <div class="contact-container">
-        <section id="contact">
-            <h1>Contact Me</h1>
-            <form>
-                <!-- Name -->
-                <label for="name">Name:</label>
-                <br>
-                <input type="text"
-                       id="name"
-                       name="name"
-                       placeholder="Enter your name">
-                <br>
-                <br>
-                <!-- Email -->
-                <label for="email">Email:</label>
-                <br>
-                <input type="email"
-                       id="email"
-                       name="email"
-                       placeholder="Enter your email">
-                <br>
-                <br>
-                <!-- Subject -->
-                <label for="subject">Subject:</label>
-                <br>
-                <input type="text"
-                       id="subject"
-                       name="subject"
-                       placeholder="Enter subject">
-                <br>
-                <br>
-                <!-- Message -->
-                <label for="message">Message:</label>
-                <br>
-                <textarea id="message"
-                          name="message"
-                          rows="5"
-                          cols="30"
-                          placeholder="Write your message"></textarea>
-                <br>
-                <br>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </div>
-
-
-    <!-- Social Media Division -->
-    <div class="social-container">
-
-        <section id="social">
-
-            <h2>Find Me On</h2>
-
-
-            <!-- Gmail -->
-            <div class="gmail-container">
-
-                <a href="https://mail.google.com/" target="_blank">
-
-                    <img src="Image/gmail_logo.jpg"
-                         alt="Gmail"
-                         width="50"
-                         height="50">
-
-                </a>
-
+    <main>
+        <!-- Introduction and profile image -->
+        <section class="hero" id="about" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Developer portfolio <span class="eyebrow-year">· 2026</span></p>
+                <h1 id="hero-title">Curious mind.<br><span>Thoughtful</span> code.</h1>
+                <p class="hero-intro">I’m Prashanta, a web developer who enjoys turning ideas into clear, useful experiences on the web.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+                    <a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+                </div>
+                <p class="hero-note">Currently building my skills, one project at a time.</p>
             </div>
-
-
-            <!-- Facebook -->
-            <div class="facebook-container">
-
-                <a href="https://www.facebook.com/" target="_blank">
-
-                    <img src="Image/Facebook_logo.webp"
-                         alt="Facebook"
-                         width="50"
-                         height="50">
-
-                </a>
-
+            <div class="hero-art" aria-label="A view of the mountains at sunset">
+                <img src="Image/Profile%20Picture.png" alt="Prashanta looking out over a mountain valley at sunset" width="1240" height="1240">
+                <span class="art-caption">LEARN · BUILD · IMPROVE</span>
             </div>
-
-
-            <!-- GitHub -->
-            <div class="github-container">
-
-                <a href="https://github.com/" target="_blank">
-
-                    <img src="Image/git_logo.jpg"
-                         alt="GitHub"
-                         width="50"
-                         height="50">
-
-                </a>
-
-            </div>
-
+            <a class="scroll-cue" href="#education"><span class="scroll-line"></span> Scroll to explore</a>
         </section>
 
-    </div>
+        <!-- Education history -->
+        <section class="section education-section" id="education" aria-labelledby="education-title">
+            <div class="section-heading">
+                <p class="eyebrow">01 / The foundation</p>
+                <h2 id="education-title">Education<span class="period">.</span></h2>
+                <p class="section-intro">A steady path of learning, from school to university.</p>
+            </div>
+            <div class="education-list">
+                <article class="education-item">
+                    <span class="education-index">01</span>
+                    <div><h3>Bachelor</h3><p>Kathmandu University</p></div>
+                    <p class="education-result"><strong>3.5</strong><span>GPA</span></p>
+                </article>
+                <article class="education-item">
+                    <span class="education-index">02</span>
+                    <div><h3>Higher Secondary</h3><p>St. Xavier’s College</p></div>
+                    <p class="education-result"><strong>3.8</strong><span>GPA</span></p>
+                </article>
+                <article class="education-item">
+                    <span class="education-index">03</span>
+                    <div><h3>Secondary</h3><p>St. Xavier’s School</p></div>
+                    <p class="education-result"><strong>3.9</strong><span>GPA</span></p>
+                </article>
+            </div>
+        </section>
 
+        <!-- Current skills and toolkit -->
+        <section class="skills-band" id="skills" aria-labelledby="skills-title">
+            <div class="skills-inner">
+                <div class="skills-heading">
+                    <p class="eyebrow">02 / The toolkit</p>
+                    <h2 id="skills-title">Learning by<br>making<span class="period">.</span></h2>
+                </div>
+                <div class="skills-content">
+                    <p>My current toolkit is growing through hands-on practice and personal projects.</p>
+                    <ul class="skill-list" aria-label="Current skills">
+                        <li><span>01</span> HTML</li>
+                        <li><span>02</span> CSS</li>
+                        <li><span>03</span> Python</li>
+                    </ul>
+                    <p class="skills-footnote">Structure, style, and problem-solving: the pieces I’m building on.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project portfolio -->
+        <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+            <div class="projects-heading">
+                <div>
+                    <p class="eyebrow">03 / Selected work</p>
+                    <h2 id="projects-title">Projects in progress<span class="period">.</span></h2>
+                </div>
+                <p class="section-intro">Small steps toward building useful things for real people.</p>
+            </div>
+            <div class="project-grid">
+                <article class="project-card project-featured">
+                    <div class="project-topline"><span>01</span><span>Personal project</span></div>
+                    <div class="project-mark mark-portfolio" aria-hidden="true"><span>PP</span><i></i></div>
+                    <div class="project-copy">
+                        <p class="project-type">WEB · PORTFOLIO</p>
+                        <h3>Personal Portfolio</h3>
+                        <p>A home for my work, skills, and journey as a web developer.</p>
+                        <a href="https://github.com/prashanta-afk/MyPortfolio" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-topline"><span>02</span><span>Concept</span></div>
+                    <div class="project-mark mark-school" aria-hidden="true"><span>SM</span><i></i><i></i><i></i></div>
+                    <div class="project-copy">
+                        <p class="project-type">ORGANIZATION · RECORDS</p>
+                        <h3>School Management System</h3>
+                        <p>A project concept for organizing student records and information.</p>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-topline"><span>03</span><span>Concept</span></div>
+                    <div class="project-mark mark-hostel" aria-hidden="true"><span>HM</span><i></i><i></i></div>
+                    <div class="project-copy">
+                        <p class="project-type">HOUSING · RECORDS</p>
+                        <h3>Hostel Management System</h3>
+                        <p>A project concept for managing hostel information and student records.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact links -->
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-inner">
+                <div>
+                    <p class="eyebrow">04 / Say hello</p>
+                    <h2 id="contact-title">Good things start<br>with a conversation<span class="period">.</span></h2>
+                </div>
+                <div class="contact-links">
+                    <p>Have a project idea or want to connect? Find me on GitHub.</p>
+                    <a href="https://github.com/prashanta-afk" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="contact-bottom"><span>PRASHANTA PATHAK</span><span>MADE WITH HTML &amp; CSS</span></div>
+        </section>
+    </main>
+
+    <!-- Copyright and back-to-top link -->
+    <footer class="site-footer">
+        <span>© 2026 Prashanta Pathak</span>
+        <a href="#top">Back to top ↑</a>
+    </footer>
 </body>
-
 </html>
