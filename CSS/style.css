@@ -35,7 +35,6 @@ p {
     background: #103c34;
     color: #fff;
 }
-
 .brand {
     display: flex;
     align-items: center;
@@ -45,42 +44,35 @@ p {
     font-weight: 700;
     text-decoration: none;
 }
-
 .brand img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     object-fit: cover;
 }
-
 .site-header nav {
     display: flex;
     align-items: center;
     gap: 28px;
 }
-
 .site-header nav a {
     color: #d9e4dc;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
 }
-
 .site-header nav a:hover,
 .site-header nav a:focus-visible {
     color: #e7ef73;
 }
-
 .site-header nav .nav-contact {
     color: #e7ef73;
 }
-
 .site-search {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-
 .site-search input {
     width: 170px;
     padding: 10px 12px;
@@ -89,7 +81,6 @@ p {
     color: #172e29;
     font: inherit;
 }
-
 .site-search button {
     padding: 10px 14px;
     border: 0;
@@ -100,11 +91,9 @@ p {
     font-size: 14px;
     font-weight: 700;
 }
-
 .site-search button:hover {
     background: #f2f69c;
 }
-
 /* Hero introduction */
 .hero {
     display: flex;
@@ -120,7 +109,6 @@ p {
     width: 55%;
     max-width: 620px;
 }
-
 .eyebrow {
     margin-bottom: 16px;
     color: #59796d;
@@ -129,11 +117,9 @@ p {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 .hero .eyebrow {
     color: #c1d2c5;
 }
-
 .status-dot {
     display: inline-block;
     width: 9px;
@@ -142,11 +128,9 @@ p {
     border-radius: 50%;
     background: #ff946d;
 }
-
 .eyebrow-year {
     color: #9eb5a8;
 }
-
 .hero h1,
 .section h2,
 .skills-heading h2,
@@ -154,31 +138,26 @@ p {
     font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
     font-weight: 700;
 }
-
 .hero h1 {
     margin-bottom: 22px;
     font-size: 68px;
     line-height: 1.02;
 }
-
 .hero h1 span {
     color: #e7ef73;
 }
-
 .hero-intro {
     max-width: 480px;
     margin-bottom: 28px;
     color: #d0ddd6;
     font-size: 18px;
 }
-
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 24px;
 }
-
 .button {
     display: inline-block;
     padding: 14px 20px;
@@ -188,33 +167,27 @@ p {
     font-weight: 700;
     text-decoration: none;
 }
-
 .button:hover {
     background: #f2f69c;
 }
-
 .text-link {
     color: #fff;
     font-size: 14px;
     font-weight: 700;
 }
-
 .text-link span {
     color: #ff946d;
 }
-
 .hero-note {
     margin: 32px 0 0;
     color: #a9bdb2;
     font-size: 13px;
 }
-
 .hero-art {
     position: relative;
     width: 40%;
     max-width: 430px;
 }
-
 .hero-art img {
     display: block;
     width: 100%;
@@ -223,7 +196,6 @@ p {
     border-radius: 50%;
     box-shadow: 14px 14px 0 #ff946d;
 }
-
 .art-caption {
     position: absolute;
     right: -16px;
@@ -238,6 +210,95 @@ p {
 
 .scroll-cue {
     display: none;
+}
+
+.portfolio-slider-section {
+    padding: 20px 0 0;
+    background: #f7f7f1;
+}
+
+.portfolio-slider-section .section-heading {
+    max-width: 1180px;
+    margin: 0 auto 20px;
+    padding: 0 36px;
+}
+
+.slider {
+    width: min(1180px, calc(100% - 48px));
+    height: min(70vh, 620px);
+    margin: 0 auto 40px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(15, 33, 35, 0.15);
+}
+
+.slider-viewport {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.45s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    cursor: pointer;
+    font-size: 28px;
+    padding: 10px 16px;
+    z-index: 2;
+}
+
+.prev {
+    left: 16px;
+}
+
+.next {
+    right: 16px;
+}
+
+.slider-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+}
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.slider-dot.active {
+    transform: scale(1.2);
 }
 
 /* Education */
